@@ -1,4 +1,7 @@
-import React from "react";
+import { LinksFunction } from "@remix-run/node";
+import styles from "./style.css?url";
+
+export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
 
 export default function TestimonialCard() {
   return (
